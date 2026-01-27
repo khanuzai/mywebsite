@@ -210,28 +210,27 @@ document.querySelectorAll('.timeline-item, .project-featured').forEach(item => {
 });
 
 // ===== CONTACT FORM =====
-const contactForm = document.getElementById('contact-form');
+const contactForm = document.getElementById("contact-form");
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    const formData = new FormData(contactForm);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const subject = formData.get('subject');
-    const message = formData.get('message');
-    
-    // Here you would typically send this to a backend
-    // For now, we'll create a nice alert
-    alert(`Thanks for reaching out, ${name}! 🚀
+contactForm.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-I'll get back to you at ${email} as soon as possible.
-
-Subject: ${subject}`);
-    
-    // Reset form
-    contactForm.reset();
+  emailjs.sendForm(
+    "service_261xl6n",
+    "template_rm2d3yr",
+    this
+  ).then(
+    function () {
+      alert("Message sent successfully 🚀");
+      contactForm.reset();
+    },
+    function (error) {
+      console.error("EmailJS error:", error);
+      alert("Message failed to send. Check console.");
+    }
+  );
 });
+
 
 // ===== CURSOR GLOW EFFECT (OPTIONAL) =====
 const cursorGlow = document.createElement('div');
