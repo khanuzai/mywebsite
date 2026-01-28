@@ -549,24 +549,6 @@ section {
     color: white;
     transform: translateY(-3px);
 }
-
-/* About Photo */
-.about-photo {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 2rem;
-    border: 3px solid var(--accent-primary);
-    box-shadow: 0 10px 30px var(--shadow-color);
-    transition: all 0.3s ease;
-}
-
-.about-photo:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 40px var(--shadow-color);
-}
-
 /* About Header - Photo with University Logos */
 .about-header {
     display: flex;
@@ -576,7 +558,7 @@ section {
     margin-bottom: 2rem;
 }
 
-/* Your photo stays the same size */
+/* Your photo */
 .about-photo {
     width: 250px;
     height: 250px;
@@ -592,7 +574,7 @@ section {
     box-shadow: 0 15px 40px var(--shadow-color);
 }
 
-/* University logos - slightly smaller */
+/* University logos */
 .university-logo {
     width: 250px;
     height: 250px;
