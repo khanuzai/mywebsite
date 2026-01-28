@@ -550,6 +550,23 @@ section {
     transform: translateY(-3px);
 }
 
+/* About Photo */
+.about-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    border: 3px solid var(--accent-primary);
+    box-shadow: 0 10px 30px var(--shadow-color);
+    transition: all 0.3s ease;
+}
+
+.about-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px var(--shadow-color);
+}
+
 /* ===== EXPERIENCE SECTION (TIMELINE) ===== */
 .experience {
     background: var(--bg-secondary);
