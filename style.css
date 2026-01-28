@@ -578,8 +578,8 @@ section {
 
 /* Your photo stays the same size */
 .about-photo {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--accent-primary);
@@ -594,8 +594,8 @@ section {
 
 /* University logos - slightly smaller */
 .university-logo {
-    width: 120px;
-    height: 120px;
+    width: 250px;
+    height: 250px;
     object-fit: contain;
     border-radius: 50%;
     background: white;
