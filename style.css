@@ -599,6 +599,43 @@ section {
 ```
 [Your Photo 250px]  [UW Logo 250px]  [WLU Logo 250px]
 
+/* Resume Download Section */
+.resume-download-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.resume-buttons-row {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.resume-buttons-row .cta-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .resume-buttons-row {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+```
+
+---
+
+## ✅ That's It!
+
+**What you get:**
+```
+[Download CS Resume]    [Download Business Resume]
+
 /* ===== EXPERIENCE SECTION (TIMELINE) ===== */
 .experience {
     background: var(--bg-secondary);
